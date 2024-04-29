@@ -1,18 +1,23 @@
-﻿
+﻿var number = 56765453;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
+char[] numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-var name = "Monika";
-var age = 25;
-var sex = "Kobieta";
+Console.WriteLine(numberInString);
 
-if (sex == "Kobieta" && age < 30) 
+Console.WriteLine("Number for check -> " + number);
+Console.WriteLine("Powtażalność cyfr");
+
+foreach (var num in numbers)
+
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
- else if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (sex == "Mężczyzna" && age < 10)
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
+    var counter = 0;
+
+    foreach (var let in letters)
+    {
+        if (numbers == letters)
+            counter++;
+        
+    }
+    Console.WriteLine(number + "->" + counter);
 }
